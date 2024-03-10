@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">3
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="xxx">
+                <li>home</li>
+                <li>about</li>
+                <li>news</li>
+                <li>service</li>
+                
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+
+    <fieldset><legend>form</legend>
+
+        <form class="ss" id=" myform" action="">
+            <div class="msg"></div>
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="name">
+            <input type="password" placeholder="password">
+            <input class="btn" type="button" value="sumit">
+
+        </form>
+
+        
+        <ul id="xxx">
+          <li class="item"> home1</li>
+          <li class="item"> home1</li>
+          <li class="item"> home1</li>
+          <li class="item"> home1</li>      
+        </ul>
+
+    </fieldset>
+    <script>
+        const cheta = document.querySelector("xxx")
+
+        for( var i=0;i<cheta.length; i++){
+            cheta[1].style.backgroundcolor='red';
+        }
+        console.log('cheta');
+    </script>

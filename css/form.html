@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">3
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>news</li>
+                <li>service</li>
+                
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+
+    <fieldset><legend>form</legend>
+
+        <form class="ss" id=" myform" action="">
+            <div class="msg"></div>
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="name">
+            <input type="password" placeholder="password">
+            <input class="btn" type="button" value="sumit">
+
+        </form>
+
+        
+        <ul class="items">
+          <li class="item"> home1</li>
+          <li class="item"> home1</li>
+          <li class="item"> home1</li>
+          <li class="item"> home1</li>
+             
+        </ul>
+
+
+
+
+    </fieldset>
+
+    <script>
+        // using for loop to to get set of result on the list item 
+
+        const items= document.querySelector('.item');
+         for(i=0; i<items.length; i++){
+            items[i].style.fontsize="2rem"
+         }
+         console.log(items)
+
+        
+        
+// 
+// dom
+//            const items =document.querySelectorAll('.item')
+//            items.forEach((item) => console.log(items))
+
+//         //    changing things in the dom 
+
+//         const ul = document.querySelector(".items");
+//         // ul.remove()
+//         ul.children[2].textContent="cheta"
+//         ul.children[1].innerHTML="ride";
+//         // adding something to the dom and removing 
+
+
+//     //    chaning in css using js 
+//         // const btn = document.querySelector('.btn')
+//         // btn.style.background='red';
+       
+
+//         // addEventListener
+//         const btn =document.querySelector('.btn')
+//         btn.addEventListener('click', (e) =>{
+//             console.log('click')
+//         })
+
+
+//         const myform= document.querySelector('#myform') ;
+//         const nameinput= document.querySelector('#name');
+//         const emailinput= document.querySelector('#email');
+//         const msg= document.querySelector('#msg');
+//         const user= document.querySelector('#user');
+
+//         myform.addEventListener('submit',onsubmit);
+//         function onsubmit(e){
+//             e.preventDefault();
+//             if(nameinput.value ===''||emailinput.value===''){
+//                 msg.classList.add('error');
+//                 msg.innerHTML='please enter all field';
+
+//                 setTimeout(() =>msg.remove(),3000)
+
+//             } else  {
+//                 console.log('success');
+//             }    
+//         }
+
+
+    </script>
+    </script>
+    
+    </script>
+    
+</body>
+</html>
